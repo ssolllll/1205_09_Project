@@ -1,4 +1,6 @@
-# 22-12-06
+# eCommerce Project
+
+## 22.12.06
 
 category_code와 brand의 Nan 값 모두 etc로 대체
 
