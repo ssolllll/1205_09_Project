@@ -1,4 +1,4 @@
-# Ecommerce Behavior Pattern Analysis
+# Ecommerce Behavior Pattern Analysis Project
 
 ## 기간
 
@@ -6,7 +6,7 @@
 
 ## 팀원
 
-**[1] 송한솔
-[2] 송준호
-[3] 김종현**
+**[1] 송한솔 😏
+[2] 송준호 😏
+[3] 김종현 😏**
 
