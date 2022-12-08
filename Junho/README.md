@@ -24,28 +24,29 @@
 
 ## 22.12.07
 
-- 전일 고려해야할 수정 및 추가 사항 작업 로그
+
+-전일 고려해야할 수정 및 추가 사항 작업 로그
  - 아래 PV수치 기준으로 가공된 데이터 기준 bar graph 작업 진행 (송한솔) 
 
-- 결측치 처리 완료된 데이터로 22.12.06 과정 재수행
+-결측치 처리 완료된 데이터로 22.12.06 과정 재수행
 
-- User_ID 별 아래의 컬럼들 정렬 제안
+-User_ID 별 아래의 컬럼들 정렬 제안
   - view, cart, count_purchase, total_amount_purchase, user_session_unique, number_behavior, view_count_brand, cart_count_brand, purchase_count_brand, weekday_max, time_max, view_price_avg, cart_price_avg, purchase_price_avg, product_id_unique, purchase_price_max, purchase_price_min, count_category_code, category_code_max, category_code_min, CV(cart/view), PC(count_purchase/cart), PV(count_purchase/view), VS(view/session), CS(cart/session), PS(count_purchase/session)
 
-- view가 0인 이상치 제거
+-view가 0인 이상치 제거
 
-- PV와 PC가 100이상인 user를 발견하여 product_id_unique와 count_purchase 대조를 통해 두가지 추측
+-PV와 PC가 100이상인 user를 발견하여 product_id_unique와 count_purchase 대조를 통해 두가지 추측
   - count_purchase는 제품의 종류가 아닌 제품의 수 기준
   - 카트에 담지않고 바로 구매를 하는 경우
  
  - PV 수치를 기준으로 25% 구간을 네개의 그룹으로 나누어 각 그룹별 행동분석 시작. 최상위(Group 1), 차상위(Group 2), 차하위(Group 3), 최하위(Group 4).
  
 -시각화를 통해 insight 도출 
- - scatterplot view와 총 구입액 상관도
-  - 상위 그룹일수록 상품을 보는 횟수와 총 구매금액의 상관관계가 더욱 크다. 최상위와 차상위 그룹은 많이 볼수록 총 구매금액이 높아지는 반면 차하위와 최하위 그룹은 많이 보아도 많은 금액을 지불하지 않는다. PV기준 타겟마케팅 방안을 고려할때 상위그룹으로 갈수록 최대한 많은 제품들을 열람하게 유도하는 전략이 고효율 전략일 것으로 짐작해볼 수 있다. 그룹1과 그룹2에 대한 마케팅 방안으로 해당 전략을 제시한다.
+  - scatterplot view와 총 구입액 상관도
+    - 상위 그룹일수록 상품을 보는 횟수와 총 구매금액의 상관관계가 더욱 크다. 최상위와 차상위 그룹은 많이 볼수록 총 구매금액이 높아지는 반면 차하위와 최하위 그룹은 많이 보아도 많은 금액을 지불하지 않는다. PV기준 타겟마케팅 방안을 고려할때 상위그룹으로 갈수록 최대한 많은 제품들을 열람하게 유도하는 전략이 고효율 전략일 것으로 짐작해볼 수 있다. 그룹1과 그룹2에 대한 마케팅 방안으로 해당 전략을 제시한다.
  
  
-- 고려해야할 수정 및 추가 사항
+-고려해야할 수정 및 추가 사항
  - 각 그룹별 특성 정리 (총구매액, 컬럼들 중 유의미한 평균값 등)
  - 히트맵 관찰을 통해 관계도 높은 변수들을 기준으로 시각화 등 분석
  - 회의에서 나온 user_session 및 category_id 기준의 행동패턴 분석
