@@ -22,7 +22,7 @@
 
 - Kaggle Ecommerce Behavior Data [출처](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store)
 - 데이터 shape : 행 = 6700만개, 열 : 9 개
-- 기간 : 2019년 11월 동안 사용자의 행동 패턴
+- 기간 : 2019년 11월 동안 사용자의 행동
 
 ### 12.05
 
